@@ -1,0 +1,42 @@
+.login-page, .register-page, .saves, .new_save_form {
+    font-family: $yuji-syuku;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    color: cyan;
+    
+}
+
+.input {
+    background-color:white;
+    font-family: $yuji-syuku;
+    padding: 5px;
+    margin: 10px;
+    border: solid 2px darkslategray;
+}
+
+.button {
+    background-image: url('https://i.imgur.com/1QxGN5D.jpg');
+    color: black;
+    font-family: $yuji-syuku;
+    font-weight: bold;
+    margin: 10px;
+    padding: 5px;
+    border: solid 2px darkslategray;
+}
+
+form {
+    width: 240px;
+    align-items: center;
+}

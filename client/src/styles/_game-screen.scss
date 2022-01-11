@@ -1,0 +1,184 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image_div{
+    width: 875px;
+    height: 540px;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+.image_div img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.game_box{
+   width: 925px;
+   height: 1100px;
+   border: 1px solid black;
+   border-radius: 3px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: white;
+}
+
+.text_div{
+    width: 92.5%;
+    height: 280px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 0px 34px 5px 34px; 
+    padding: 0px 10px 0px 10px;
+}
+
+.displayed_text{
+    font-size: 14px;
+    font-family: $yuji-syuku;
+}
+
+.user_input{
+    display: flex;
+    justify-content: center;
+    width: 855px;
+    margin: 2px 0px 2px 0px;
+    font-family: $yuji-syuku;
+}
+
+.user_input input{
+    width: 100%;
+    font-family: $yuji-syuku;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.ui{
+    margin: 5px 10px 5px 10px;
+    display: flex;
+    flex-direction: row;
+    width: 93%;
+
+}
+
+.instructions{
+    height: 200px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 0px 2px 15px 2px;
+    flex-direction: column;
+}
+
+.instructions h3{
+    display: flex;
+    font-family: $yuji-syuku;
+    font-size: 14px;
+    margin: 5px 0px 2px 5px;
+}
+
+.commands{
+    width: 295px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5px 0px 2px 5px;
+}
+
+.command_div{
+    display: flex;
+    flex-direction: row;
+}
+
+.commands h4{
+    font-family: $yuji-syuku;
+    font-size: 12px;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 110px;
+    height:30px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area_div{
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 200px;
+    width: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px 2px 0px 2px;
+}
+
+.area_div h2{
+    font-family: $yuji-syuku;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 6px;
+}
+
+.area_name{
+    font-family: $yuji-syuku;
+    font-size: 13px;
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
+.inventory{
+    width: 165px;
+    height: 200px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    margin: 0px 2px 0px 2px;
+}
+
+.inventory h2{
+    font-family: $yuji-syuku;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 6px;
+}
+
+.inventory-items, .interactable_items {
+    font-family: $yuji-syuku;
+    font-size: 13px;
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
+.interactables{
+    width: 165px;
+    height: 200px;
+    border: 1px solid black;  
+    border-radius: 3px;
+    margin: 0px 2px 0px 2px;
+}
+
+.interactables h2{
+    font-family: $yuji-syuku;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 6px;
+}
+
+.user_buttons{
+    width: 120px;
+}
+
+.user_buttons button{
+    width: 105px;
+    margin-top: 15px;
+    border-radius: 3px;
+}

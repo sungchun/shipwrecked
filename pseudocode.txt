@@ -1,0 +1,128 @@
+game objects:
+    level
+    {
+        name: name of level
+        text : a string that describes what's happening
+        areas: [ a list of sub-dictionaries housing the zones that the player can enter]
+    }
+
+    zones
+    {
+        name: name of zone
+        text : a string that describes what's happening
+        cleared : a boolean that shows whether the player has finished this areas, if True then text changes and if the relevant zone, the player can then progress to the next level
+        areas: [ a list of zones accessible from this zone]
+        items: [ a list of items that the player can interact with (this should be updated when the player interacts with the items)]
+        solution: the command it is waiting for to trigger special event
+        method: puzzle(){
+            do the puzzle and check to see if the player has the appropriate solution
+            if(solution){
+                player goes to new zone
+            }
+            else{
+                can't progress
+            }
+        }
+        examine: the relevant text displayed
+        talkTo: the relevant text is displayed
+    }
+    people(zones)
+    {
+        use:
+        examine: 'stop touching me'
+        dialogue: [an array of things that the person can say as well as the user's choices of response stored as properties of an object]
+    }
+    object(zones)
+    {
+        item: the item that it is
+        use:
+        examine:
+    }
+
+
+    player
+    {
+        inventory: [a list of items that they possess]
+        method: combineItem(...items){
+            if items[1:] in items[0].paired_with:
+                self.inventory.append(items[0].creates)
+            for x in items[0].paired_with:
+                if x.indestructable != True:
+                    self.inventory.pop(x)
+                    print(f'the {x} is gone')
+            print(f'you created the {items[0].creates}')
+        }
+    }
+
+    items
+    {
+        name: the name of the object
+        text: text displayed when item is inspected
+        indestructable: True
+        paired_with: [the things that it can interact with]
+        creates: the item created when combined correctly
+        examine: the string that is printed when examined
+        use: what happens when you use it
+    }
+
+gameplay:
+    store all the possible commands that the player can do
+        commands = ['WALK TO', 'TALK TO'], etc.
+    the_commands = ['WALK TO', 'TALK TO', 'USE', 'COMBINE', 'EXAMINE', 'PICK UP', 'HELP', 'INVENTORY', 'GIVE']
+    define a function for each of these commands 
+    eg. player_input = WALK TO ROCK POOL
+        walk_to(thing){
+            if this.areas.includes(thing){
+                change the current area to 'thing'
+            }else{
+                thing is not an accessible area
+            }
+        }
+
+        player_input = USE ROCK
+        use(thing){
+            if(this.objects.includes(thing)){
+                console.log(`${thing.usetext}`)
+                thing.use()
+            }else{
+                console.log(you can't use that or there is no such thing or whatever)
+            }
+        }
+    somewhere current area is stored (state or smth)
+    text from that object is displayed
+    
+
+ERD:
+    user table:
+    {
+        username,
+        email,
+        password,
+        password-confirmation,
+        user_id: the id
+    }
+
+    game table:
+    {   
+        save_id: the id of the game
+        levels: [an array of the updated levels]
+        character: the character object
+        (this is updated as the player plays the game)
+        timestamp: the time that they saved/stopped playing
+        level: what level they're in
+        user: the id of the user
+        manyToMany (stretch goal): character
+    }
+
+    character:
+    {
+        name:
+        description:
+        personality:
+        special: abilities
+    }
+
+scenarios:
+    1. the player arrives at the area:
+        - see the text and are prompted for a input
+            - the player chooses which zone to go to
