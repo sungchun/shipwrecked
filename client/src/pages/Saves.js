@@ -20,7 +20,7 @@ const Saves = ({ setZone, setInventory }) => {
         async function getSaves() {
             const config = {
                 method: 'get',
-                url: '/api/games',
+                url: '/api/games/',
                 header: {
                     Authorization: `Bearer ${getToken()}`,
                     'Content-Type': 'application/json',
@@ -69,9 +69,9 @@ const Saves = ({ setZone, setInventory }) => {
                 'Content-Type': 'application/json',
             }
         }
-        const backednItems = await axios(config)
+        const backendItems = await axios(config)
         const saveItems = []
-        backednItems.data.forEach((thing) => {
+        backendItems.data.forEach((thing) => {
             console.log('saveid:', getSaveID())
             if (thing.game === Number(getSaveID())) {
                 console.log('item in backend:', thing)

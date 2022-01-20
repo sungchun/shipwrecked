@@ -18,7 +18,7 @@ const SaveGameButton = ({ setSecondText }) => {
         console.log('current save zone:', currentSaveZone)
         config = {
             method: "put",
-            url: `/api/zones/${currentSaveZone.id}`,
+            url: `/api/zones/${currentSaveZone.id}/`,
             header: {
                 Authorization: `Bearer ${getToken()}`,
                 'Content-Type': 'application/json',
@@ -42,7 +42,7 @@ const SaveGameButton = ({ setSecondText }) => {
         const currentZone = response.data.find((zone) => zone.id === Number(getZoneID()))
         config = {
             method: "put",
-            url: `/api/zones/${Number(getZoneID())}`,
+            url: `/api/zones/${Number(getZoneID())}/`,
             header: {
                 Authorization: `Bearer ${getToken()}`,
                 'Content-Type': 'application/json',

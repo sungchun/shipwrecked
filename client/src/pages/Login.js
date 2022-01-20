@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { setID, setToken } from "../helpers/auth"
 import { Link, useNavigate } from 'react-router-dom'
-import { login } from "../helpers/api"
 import axios from "axios"
 
 const Login = () => {
@@ -9,7 +8,6 @@ const Login = () => {
         username: '',
         password: ''
     })
-    const [errorInfo, setErrorInfo] = useState({})
     const [isError, setIsError] = useState(false)
 
     const navigate = useNavigate()

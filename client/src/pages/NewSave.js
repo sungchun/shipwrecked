@@ -98,7 +98,7 @@ const NewSave = () => {
                 console.log('the connected zones:', connectedZones)
                 const config = {
                     method: "put",
-                    url: `/api/zones/${gameZones[i].id}`,
+                    url: `/api/zones/${gameZones[i].id}/`,
                     header: {
                         Authorization: `Bearer ${getToken()}`,
                         'Content-Type': 'application/json',

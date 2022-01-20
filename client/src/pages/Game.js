@@ -32,7 +32,7 @@ const Game = ({ zone, setZone, inventory, setInventory }) => {
         }
         let config = {
             method: 'get',
-            url: `/api/zones/${Number(getZoneID())}`,
+            url: `/api/zones/${Number(getZoneID())}/`,
             header: {
                 Authorization: `Bearer ${getToken()}`,
                 'Content-Type': 'application/json',
@@ -42,7 +42,7 @@ const Game = ({ zone, setZone, inventory, setInventory }) => {
         const currentZoneObject = response.data
         config = {
             method: 'put',
-            url: `/api/zones/${Number(getZoneID())}`,
+            url: `/api/zones/${Number(getZoneID())}/`,
             header: {
                 Authorization: `Bearer ${getToken()}`,
                 'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ const Game = ({ zone, setZone, inventory, setInventory }) => {
             async function (location) {
                 const config = {
                     method: 'get',
-                    url: `/api/zones/${Number(getZoneID())}`,
+                    url: `/api/zones/${Number(getZoneID())}/`,
                     header: {
                         Authorization: `Bearer ${getToken()}`,
                         'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ const Game = ({ zone, setZone, inventory, setInventory }) => {
                 for (let i = 0; i < currentZoneObject.zones.length; i++) {
                     const config = {
                         method: 'get',
-                        url: `/api/zones/${currentZoneObject.zones[i]}`,
+                        url: `/api/zones/${currentZoneObject.zones[i]}/`,
                         header: {
                             Authorization: `Bearer ${getToken()}`,
                             'Content-Type': 'application/json',
@@ -111,7 +111,7 @@ const Game = ({ zone, setZone, inventory, setInventory }) => {
                             setInventory(updatedInventory)
                             const config = {
                                 method: 'delete',
-                                url: `/api/items/${itemID}`,
+                                url: `/api/items/${itemID}/`,
                                 header: {
                                     Authorization: `Bearer ${getToken()}`,
                                     'Content-Type': 'application/json',
@@ -187,7 +187,7 @@ const Game = ({ zone, setZone, inventory, setInventory }) => {
                     setInventory(newInventory)
                     let config = {
                         method: 'delete',
-                        url: `/api/items/${givenItem[0]}`,
+                        url: `/api/items/${givenItem[0]}/`,
                         header: {
                             Authorization: `Bearer ${getToken()}`,
                             'Content-Type': 'application/json',
@@ -304,7 +304,7 @@ const Game = ({ zone, setZone, inventory, setInventory }) => {
                 if (splitCommand.includes(itemName)) {
                     let config = {
                         method: 'delete',
-                        url: `/api/items/${inventory[i][0]}`,
+                        url: `/api/items/${inventory[i][0]}/`,
                         header: {
                             Authorization: `Bearer ${getToken()}`,
                             'Content-Type': 'application/json',
