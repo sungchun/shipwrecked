@@ -4,7 +4,7 @@
 
 ## How to download:
 
-The projects’ files can be accessed here.
+The projects’ files can be accessed here: [GitHub](https://github.com/sungchun/shipwrecked)
 
 - If you want to clone the repository:
   1. Click the button labeled ‘Code’.
