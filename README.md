@@ -1,5 +1,8 @@
 #Shipwrecked
 
+## Project Overview
+This project was a pair project and the final project I did during my Software Engineering Immersive course at General Assembly. The project is a text-based RPG where the player’s environment is described to them with descriptive text, and the player types text commands to play the game. 
+
 ## Deployment
 
 ## How to download:
@@ -13,9 +16,6 @@ The projects’ files can be accessed here: [GitHub](https://github.com/sungchun
 - If you want to download the ZIP file:
   1. Click the button labeled ‘Code’
   2.Click the ‘Download ZIP’ button on the dropdown menu.
- 
-## Project Overview
-This project was a pair project and the final project I did during my Software Engineering Immersive course at General Assembly. The project is a text-based RPG where the player’s environment is described to them with descriptive text, and the player types text commands to play the game. 
 
 ## Goal and Timeframe:
 
