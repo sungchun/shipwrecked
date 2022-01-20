@@ -27,44 +27,44 @@ Shipwrecked is a text-based RPG where the player gives text-commands to play the
 
 With that information, the player has a list of commands that they can use.
 The commands are:
-    - ‘WALKTO’
-    - ‘PICKUP’
-    - ‘TALKTO’
-    - ‘EXAMINE’
-    - ‘COMBINE’
-    - ‘USE’
-    - ‘GIVE’
+- ‘WALKTO’
+- ‘PICKUP’
+- ‘TALKTO’
+- ‘EXAMINE’
+- ‘COMBINE’
+- ‘USE’
+- ‘GIVE’
 
 In the game, the player plays as a character that has been washed on the beach of an unknown island. The objective of the game is to be rescued. 
 
 With the aforementioned commands the player navigates and interacts with the environment, solving puzzles to progress.
 
 ## Technology Used:
-    - HTML5
-    - CSS
-    - JavaScript
-    - Python3
-    - Django
-    - PostgreSQL
-    - PyJWT
-    - Axios
-    - Git + GitHub
-    - React
+- HTML5
+- CSS
+- JavaScript
+- Python3
+- Django
+- PostgreSQL
+- PyJWT
+- Axios
+- Git + GitHub
+- React
 
 ## Functionality
-    - Register & login.
-    - Create a new save.
-    - Play any of their selected saves.
-    - Save their game progress.
-    - Read the descriptive text associated with the zone the player’s in. 
-    - See the items that the player can interact with in the zone.
-    - See which zones are accessible from the zone they are in.
-    - Walk to different zones.
-    - Examine items.
-    - Pickup items.
-    - Combine items.
-    - Use items.
-    - Give items.
+- Register & login.
+- Create a new save.
+- Play any of their selected saves.
+- Save their game progress.
+- Read the descriptive text associated with the zone the player’s in. 
+- See the items that the player can interact with in the zone.
+- See which zones are accessible from the zone they are in.
+- Walk to different zones.
+- Examine items.
+- Pickup items.
+- Combine items.
+- Use items.
+- Give items.
 
 ![login page](assets/login.png)
 
