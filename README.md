@@ -6,13 +6,13 @@
 
 The projects’ files can be accessed here.
 
-If you want to clone the repository:
-    1. Click the button labeled ‘Code’.
-    2. On the dropdown menu select HTTPS and copy the link provided.
-    3. Using the terminal, navigate to where you want to clone the repository and execute the command: “git clone (copied HTTPS link)”
-If you want to download the ZIP file:
-    1. Click the button labeled ‘Code’
-    2.Click the ‘Download ZIP’ button on the dropdown menu.
+- If you want to clone the repository:
+  1. Click the button labeled ‘Code’.
+  2. On the dropdown menu select HTTPS and copy the link provided.
+  3. Using the terminal, navigate to where you want to clone the repository and execute the command: “git clone (copied HTTPS link)”
+- If you want to download the ZIP file:
+  1. Click the button labeled ‘Code’
+  2.Click the ‘Download ZIP’ button on the dropdown menu.
  
 ## Project Overview
 This project was a pair project and the final project I did during my Software Engineering Immersive course at General Assembly. The project is a text-based RPG where the player’s environment is described to them with descriptive text, and the player types text commands to play the game. 
