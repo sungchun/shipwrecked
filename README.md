@@ -5,6 +5,8 @@ This project was a pair project and the final project I did during my Software E
 
 ## Deployment
 
+This project has not been deployed yet.
+
 ## How to download:
 
 The projects’ files can be accessed here: [GitHub](https://github.com/sungchun/shipwrecked)
