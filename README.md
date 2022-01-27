@@ -17,6 +17,15 @@ The projects’ files can be accessed here: [GitHub](https://github.com/sungchun
   1. Click the button labeled ‘Code’
   2.Click the ‘Download ZIP’ button on the dropdown menu.
 
+## Running the App
+
+Once you have downloaded to game files, to run it in your browser you must follow the following steps:
+1.  Navigate to the 'client' directory in your terminal and run the command 'yarn', this will install all dependencies.
+2.  In the root directory ('shipwrecked') terminal run the command 'python3 manage.py runserver'.
+3.  Navigate back to the 'client' directory and run the command 'yarn start'.
+4.  Go to localhost:3000 in your browser and you should see the project.
+
+
 ## Goal and Timeframe:
 
 The goal of this project was to create a web app with full CRUD functionality using Django REST framework and a React frontend. The time frame was 10 days.
