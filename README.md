@@ -20,7 +20,7 @@ The projects’ files can be accessed here: [GitHub](https://github.com/sungchun
   2.Click the ‘Download ZIP’ button on the dropdown menu.
 
 ## Running the App
-
+Due to bugs caused during deployment, if you wish to access a working version of Shipwrecked please download the project from my partner [Simon's Repository](https://github.com/sclemson/Shipwrecked).
 Once you have downloaded to game files, to run it in your browser you must follow the following steps:
 1.  Navigate to the 'client' directory in your terminal and run the command 'yarn', this will install all dependencies.
 2.  In the root directory ('shipwrecked') terminal run the command 'python3 manage.py runserver'.
